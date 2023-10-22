@@ -5,10 +5,11 @@ class RecentActivities extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      height: 270,
-      color: Colors.red,
+    return Expanded(
+      child: Container(
+        width: double.infinity,
+        color: Colors.red,
+      ),
     );
   }
 }
