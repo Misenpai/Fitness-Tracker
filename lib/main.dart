@@ -1,4 +1,4 @@
-import 'package:fitness_tracker/pages/home/details/details.dart';
+import 'package:fitness_tracker/pages/details/details.dart';
 import 'package:fitness_tracker/pages/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         '/details': (context) => DetailsPage(),
       },
       initialRoute: '/',
-      home: DetailsPage(),
+      // home: DetailsPage(),
     );
   }
 }
