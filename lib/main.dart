@@ -16,14 +16,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Fitness Tracker',
-      theme: ThemeData(),
+      theme: ThemeData(
+          fontFamily: 'Roboto',
+          textTheme: TextTheme(
+              displayLarge: TextStyle(
+            fontSize: 14,
+            color: Colors.black,
+            fontWeight: FontWeight.w900,
+          ))),
       debugShowCheckedModeBanner: false,
       routes: {
         '/': (context) => HomePage(),
         '/details': (context) => DetailsPage(),
       },
       initialRoute: '/',
-      // home: DetailsPage(),
     );
   }
 }
