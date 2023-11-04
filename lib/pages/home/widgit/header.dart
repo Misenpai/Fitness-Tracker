@@ -66,7 +66,6 @@ class AppHeader extends StatelessWidget {
 class HeaderPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    // TODO: implement paint
     Paint backColor = Paint()..color = Color(0xff18b0e8);
     Paint circles = Paint()..color = Colors.white.withAlpha(40);
     canvas.drawRect(
@@ -79,7 +78,6 @@ class HeaderPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    // TODO: implement shouldRepaint
     return false;
   }
 }

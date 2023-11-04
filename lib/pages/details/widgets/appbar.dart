@@ -13,7 +13,9 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: Colors.transparent,
       elevation: 0,
       leading: IconButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).pop();
+        },
         icon: Icon(
           Icons.arrow_back_ios,
           color: Colors.black,
@@ -50,6 +52,5 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  // TODO: implement preferredSize
   Size get preferredSize => Size.fromHeight(appBar.preferredSize.height);
 }

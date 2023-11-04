@@ -38,7 +38,7 @@ class _GraphAreaState extends State<GraphArea>
   ];
   @override
   void initState() {
-    // TODO: implement initState
+  
     super.initState();
     _animationController =
         AnimationController(vsync: this, duration: Duration(seconds: 2));
@@ -47,7 +47,7 @@ class _GraphAreaState extends State<GraphArea>
 
   @override
   void dispose() {
-    // TODO: implement dispose
+
     _animationController.dispose();
     super.dispose();
   }
@@ -152,8 +152,8 @@ class GraphPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    return true;
+  bool shouldRepaint(covariant GraphPainter oldDelegate) {
+    return data != oldDelegate.data;
   }
 }
 

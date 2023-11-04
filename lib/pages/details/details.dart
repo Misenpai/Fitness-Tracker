@@ -1,7 +1,7 @@
 import 'package:fitness_tracker/pages/details/widgets/appbar.dart';
 import 'package:fitness_tracker/pages/details/widgets/dates.dart';
 import 'package:fitness_tracker/pages/details/widgets/graph.dart';
-import 'package:fitness_tracker/pages/details/widgets/info.dart';
+import 'package:fitness_tracker/pages/details/widgets/info.dart' hide Stats;
 import 'package:fitness_tracker/pages/details/widgets/stats.dart';
 import 'package:fitness_tracker/pages/details/widgets/steps.dart';
 import 'package:fitness_tracker/widgit/bottom_navigation.dart';
@@ -13,6 +13,7 @@ class DetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: MainAppBar(
         appBar: AppBar(),
       ),
@@ -22,7 +23,9 @@ class DetailsPage extends StatelessWidget {
           Steps(),
           Graph(),
           Info(),
+          Divider(height: 30),
           Stats(),
+          SizedBox(height: 30),
           BottomNavigation(),
         ],
       ),

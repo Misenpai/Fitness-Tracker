@@ -20,7 +20,7 @@ class BottomNavigation extends StatelessWidget {
               offset: Offset(0, -15),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.of(context).pushNamed('/');
+                  // Navigator.of(context).pushReplacementNamed('/');
                 },
                 child: Container(
                     padding: const EdgeInsets.all(13),
@@ -45,7 +45,7 @@ class BottomNavigation extends StatelessWidget {
             Icon(Icons.date_range),
             GestureDetector(
                 onTap: () {
-                  Navigator.of(context).pushNamed('/details');
+                  // Navigator.of(context).pushNamed('/details');
                 },
                 child: Icon(Icons.settings)),
           ],
